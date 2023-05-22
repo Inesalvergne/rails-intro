@@ -1,0 +1,15 @@
+<h1>Contact our team</h1>
+
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="<%= params['member'] %>">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @students.each do |student| %>
+    <li><%= student %></li>
+  <% end %>
+</ul>
+
+<%# <a href="/"> Go back to homepage </a> %>
+<%= link_to 'Go back to homepage', home_path %>
