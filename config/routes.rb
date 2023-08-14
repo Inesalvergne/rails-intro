@@ -6,6 +6,5 @@ Rails.application.routes.draw do
   # We can give aliases to our routes to change the names of the prefix
   get '/about', to: 'pages#about', as: :about
   get '/contact', to: 'pages#contact'
-
   # 💡 Run "rails routes" in your terminal to get a view of all your routes!
 end
